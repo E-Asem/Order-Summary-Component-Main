@@ -1,0 +1,189 @@
+/* Start Variables */
+:root {
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    --main-border-radius: 15px;
+    --main-height: 50px;
+    --main-opacity: 0.6;
+}
+/* End Variables */
+
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-color:  var(--pale-blue);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .body {
+        background-image: url(../images/pattern-background-mobile.svg);
+    }
+}
+/* Desktop Screens */
+@media (min-width: 1200px) {
+    .body {
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: var(--main-border-radius);
+    width: 23rem;
+    height: 36rem;
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .container {
+        width: 375px;
+    }
+}
+/* Desktop Screens */
+@media (min-width: 1200px) {
+    .container {
+        width: 1440px;
+    }
+}
+/* End Global Rules */
+
+img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+h3 {
+    color: var(--dark-blue);
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+p {
+    color: var(--desaturated-blue);
+    font-size: 16px;
+    text-align: center;
+    width: 18rem;
+}
+
+.plan {
+    background-color: var(--very-pale-blue);
+    border-radius: var(--main-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 1rem;
+    margin: 2rem 0 2rem 0;
+    width: 20rem;
+    height: 5rem;
+}
+
+img[alt="icon-music"] {
+    margin-right: 1rem;
+    width: auto;
+    height: var(--main-height);
+}
+
+.plan div{
+    display: flex;
+    flex-direction: column;
+    flex: 2 1;
+}
+
+h4 {
+    color: var(--dark-blue);
+}
+
+span {
+    color: var(--desaturated-blue);
+}
+
+.plan a {
+    color: var(--bright-blue);
+}
+
+.plan a:hover {
+    cursor: pointer;
+}
+
+.plan a:active {
+    opacity: var(--main-opacity);
+    text-decoration: none;
+}
+
+button {
+    text-align: center;
+    height: var(--main-height);
+    width: 20rem;
+    background-color: var(--bright-blue);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--main-border-radius);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    opacity: var(--main-opacity);
+    background-color: var(--desaturated-blue);
+}
+
+#cancel-button {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    margin: auto;
+}
+
+#cancel-button:active {
+    color: var(--dark-blue);
+}
+
+#cancel-button:hover {
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 10px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
