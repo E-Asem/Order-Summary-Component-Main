@@ -29,9 +29,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/E-Asem/Order-Summary-Component-Main)
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://e-asem.github.io/Order-Summary-Component-Main/)
 
 ## My process
 
